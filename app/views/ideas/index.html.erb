@@ -1,0 +1,8 @@
+<% @ideas.each do |idea| %>
+  <h1><center><%= idea.log %></center></h1>
+  <p style = "display: inline"><center>
+    <a href = "/idea/<%= idea.id %>">go to</a> |
+    <a href = "/idea/<%= idea.id %>/edit">edit</a>  |
+    <a href = "/idea/<%= idea.id %>/destroy">delete</a>
+  </center></p>
+<% end %>

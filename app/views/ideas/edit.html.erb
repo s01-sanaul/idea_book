@@ -1,0 +1,7 @@
+<center><h2 style = "font-family: 'Helvetica'"><b>change idea</b></h2>
+<form action = "/edit_idea/<%= @idea.id %>">
+  <input type = "text" name = "log" placeholder = "prev: <%= @idea.log %>">
+  <input type = "submit">
+</form>
+<br>
+  <a href = "/idea/<%= @idea.id %>">go back</a></center>
