@@ -12,6 +12,8 @@
 <body>
   <h1 style = "font-family: 'Helvetica'; background-color: #5D90F6;"><center><b><a style = "text-decoration: none; color: white" href = "/ideas">ideabook</a></b></center></h1>
 <%= yield %>
-<h3><center><a href = "/new">new idea</a></center></h3>
+<% if request.fullpath != "/new" %>
+  <h3><center><a href = "/new">new idea</a></center></h3>
+<% end %>
 </body>
 </html>

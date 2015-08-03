@@ -3,7 +3,11 @@
   <h1><b><%= @idea.log %></b></h1>
   <p><a href = "/idea/<%= @idea.id %>/edit">edit</a> | <a href = "/idea/<%= @idea.id %>/destroy">delete</a> | 
     <a href = "/ideas/">all</a></p>
-    <p><a class="btn btn-primary btn-lg" href="/idea/ <%= @idea.id + 1 %>" role="button">Next idea</a></p>
+  <!-- <% next_id = Idea.find_by_id(params["id"]).id + 1 %> 
+  <% until Idea.find_by_id(next_id) != nil ||    %>
+  <% next_id += 1 %>
+  <% end %> -->
+  <p><a class="btn btn-primary btn-lg" href="/idea/ <%= @idea.id + 1 %>" role="button">Next idea</a></p>
   </center></div>
 
 
